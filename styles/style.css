@@ -178,6 +178,7 @@
 }
 
 @supports ((-webkit-text-stroke: 1px var(--bg-color))) {
+
   .card__label {
     text-shadow: none;
     -webkit-text-stroke: 0.5px var(--bg-color);
@@ -438,6 +439,7 @@
 }
 
 @media (width > 696px) {
+
   .header__title {
     margin-top: 142px;
   }
