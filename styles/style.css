@@ -87,19 +87,20 @@
 }
 
 .theme-menu__button::after {
+  transition: transform 0.3s;
   content: '';
   background-color: var(--main-color);
   position: absolute;
   bottom: -2px;
   left: 0;
   height: 2px;
-  width: 0;
-  transform: scaleX(0.4);
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
 }
 
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
-  width: 100%;
 }
 
 .theme-menu__button:disabled {
@@ -228,7 +229,7 @@
 }
 
 .is-liked {
-  animation: heartScale 0.3s ease-in 0.1s;
+  animation: heartScale 0.3s linear 0.1s;
 }
 
 .sparks {
@@ -237,7 +238,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: spark 0.3s ease-in 0.3s alternate;
+  animation: spark 0.3s linear 0.3s alternate;
 }
 
 .contour {
@@ -267,6 +268,7 @@
 
 .like-icon.is-liked .core {
   fill: red;
+  transition: 0.3s;
 }
 
 .main-body {
@@ -399,6 +401,7 @@
   color: var(--main-color);
   text-transform: uppercase;
   font-family: var(--accent-fonts), sans-serif;
+  font-size: 14px;
   line-height: 21px;
   min-width: 234px;
 }
@@ -407,6 +410,8 @@
   padding: 12px 0;
   width: calc(100% - 60px);
   text-transform: uppercase;
+  font-family: var(--accent-fonts), sans-serif;
+  font-size: 14px;
   margin: 0 30px 30px;
 }
 
