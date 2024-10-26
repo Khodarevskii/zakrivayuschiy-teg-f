@@ -10,8 +10,7 @@
   --button-text-color: #fff;
 }
 
-@media (prefers-color-scheme: light){
-
+@media (prefers-color-scheme: light) {
   :root {
     --bg-color: #fff;
     --main-fonts-weight-bold: 700;
@@ -23,7 +22,6 @@
     --main-color: #000;
     --button-text-color: #fff;
   }
-
 }
 
 :root.theme-dark {
@@ -38,8 +36,7 @@
   --main-fonts-weight-regular: 465;
 }
 
-@media (prefers-color-scheme: dark){
-
+@media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #000;
     --bg-linear-gradient-color: #000;
@@ -51,6 +48,4 @@
     --main-fonts-weight-bold: 785;
     --main-fonts-weight-regular: 465;
   }
-  
-
 }
